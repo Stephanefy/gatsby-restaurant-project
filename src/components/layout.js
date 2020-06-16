@@ -10,6 +10,7 @@ import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 import { createGlobalStyle} from 'styled-components';
 import Navbar from '../components/globals/navbar/Navbar'
+import Footer from '../components/globals/Footer';
 
 // import './bootstrap.min.css';
 // import "./layout.css";
@@ -26,6 +27,7 @@ const Layout = ({children}) => {
       <GlobalStyle />
       <Navbar />
         {children}
+      <Footer/>  
     </>
   )
 }

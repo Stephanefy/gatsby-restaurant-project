@@ -29,7 +29,7 @@ export default class NavbarIcon extends Component {
       <IconWrapper>
         {this.state.icons.map(i => {
           return (
-            <a id={i.id} href={i.path} target="_blank" rel="noopener noreferer">
+            <a key={i.id} href={i.path} target="_blank" rel="noopener noreferer">
               {i.icon}
             </a>
           )
